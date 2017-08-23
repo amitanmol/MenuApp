@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <!-- jquery mobile -->
+        <script type="text/javascript" src="scripts/jquery.mobile-1.4.5/jquery.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+        <link rel="stylesheet" type="text/css" href="scripts/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+
+        <!-- app css -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>MenuApp</title>
+    </head>
+    <body>
+        <div data-role="page" id="home-page">
+            <div data-role="panel" id="mypanel" data-position="left" data-display="push">
+                <!-- panel content goes here -->
+                <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+                    <li><a href="#">Acura</a></li>
+                    <li><a href="#">Audi</a></li>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">Cadillac</a></li>
+                    <li><a href="#">Ferrari</a></li>
+                </ul>
+            </div><!-- /panel -->
+
+            <div data-role="header" data-position="fixed">
+                <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext">Menu</a>
+                <h1>HOME</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>Hello World!!</p>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>Footer Text</h1>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
